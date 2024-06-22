@@ -167,9 +167,9 @@ def main():
     "Загрузка данных"
     df = pd.read_csv('./online_retail_customer_churn.csv', sep=',')
     solution = Solution()
-    # solution.task1(df)
-    # df = solution.task2(df)
-    # solution.task3(df, '', strict_mode=True)
+    solution.task1(df)
+    df = solution.task2(df)
+    solution.task3(df, '', strict_mode=True)
     solution.task4(df)
 
 
